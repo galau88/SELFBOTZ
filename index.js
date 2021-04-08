@@ -194,7 +194,7 @@ onlydev.sendMessage(from, `Sama Sama Kak 🙂`, audio, { quoted :  freply })
 			}
     //function antilink
 		
-        if (messagesC.includes("://chat.whatsapp.com/")){
+        if (messagesC.match("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntilink) return
 		if (isGroupAdmins) return reply('karena kamu adalah admin group, bot tidak akan kick kamu')
